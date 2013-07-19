@@ -21,7 +21,7 @@ echo "installing heroku"
  ssh-keygen -t rsa
  heroku keys:add
  
- echo "PS1=\[\033[01;35m\][\u@\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[01;35m\]]\[\033[01;34m\]$\[\033[00m\]" >> .bashrc_custom
+ echo "PS1='\[\033[01;35m\][\u@\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[01;35m\]]\[\033[01;34m\]$\[\033[00m\]'" >> .bashrc_custom
  
  echo "exiting pls log back in to see changes"
  exit
