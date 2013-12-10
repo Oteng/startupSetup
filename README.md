@@ -1,4 +1,4 @@
 startupSetup
 ============
 
-A bash script to install the thing need for dev
+A bash script to install the thing needed for dev
