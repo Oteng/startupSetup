@@ -40,6 +40,18 @@ npm install sails-mongo -g
 npm install mongodb -g
 npm install less -g
 
+echo "install apache"
+sudo yum install httpd
+sudo service httpd start
+
+sudo yum install mysql mysql-server
+sudo service mysqld start
+
+sudo /usr/bin/mysql_secure_installation
+
+echo "install php \n"
+sudo yum install php php-mysql
+
 
 echo "\n\n[\033[01;30m\]"
 echo "exiting pls log back in to see changes"
