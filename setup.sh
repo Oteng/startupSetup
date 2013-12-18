@@ -31,6 +31,16 @@ heroku keys:add
 
 echo "PS1='\[\033[01;35m\][\u@\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[01;35m\]]\[\033[01;34m\]$\[\033[00m\]'" >> ~/.bashrc_custom
 
+echo "install sails js from npm\n"
+npm install sails -g
+
+echo "installing sails adaptor mongo\n"
+npm install sails-mongo -g
+
+npm install mongodb -g
+npm install less -g
+
+
 echo "\n\n[\033[01;30m\]"
 echo "exiting pls log back in to see changes"
 echo "\n\n[\033[00m\]"
