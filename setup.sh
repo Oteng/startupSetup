@@ -11,20 +11,18 @@ wget raw.github.com/startup-class/dotfiles/master/.screenrc -O .screenrc
 git clone https://github.com/startup-class/setup.git
 ./setup/setup.sh
 
-echo "\n\n[\033[01;30m\]"
-echo "installing heroku\n"
-echo "\n\n[\033[00m\]"
+
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-echo "\n\n[\033[01;30m\]"
+
 echo "logging in to heroku\n"
-echo "\n\n[\033[00m\]"
+
 
 heroku login
 
-echo "\n\n[\033[01;30m\]"
+
 echo "generating rsa key for heroku"
-echo "\n\n[\033[00m\]"
+
 
 ssh-keygen -t rsa
 heroku keys:add
@@ -39,22 +37,21 @@ npm install sails-mongo -g
 
 npm install mongodb -g
 npm install less -g
-
+npm install sass -g
 echo "install apache"
-sudo yum install httpd
+sudo apt-get install httpd
 sudo service httpd start
 
-sudo yum install mysql mysql-server
+sudo apt-get install mysql mysql-server
 sudo service mysqld start
 
 sudo /usr/bin/mysql_secure_installation
 
 echo "install php \n"
-sudo yum install php php-mysql
+sudo apt-get install php php-mysql
 
 
-echo "\n\n[\033[01;30m\]"
 echo "exiting pls log back in to see changes"
-echo "\n\n[\033[00m\]"
+
 exit
  
