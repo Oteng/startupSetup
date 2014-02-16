@@ -9,7 +9,8 @@ sudo apt-get install -y git-core
 wget raw.github.com/startup-class/dotfiles/master/.screenrc -O .screenrc
 
 git clone https://github.com/startup-class/setup.git
-./setup/setup.sh
+cd /setup
+./setup.sh
 
 
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
